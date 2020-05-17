@@ -18,9 +18,9 @@ const HeaderRight = ({ open, handleClick }) => {
       arrow={false}
     >
       <DropdownMenu>
-        <DropdownItems><a href="/About" alt="Our Director">Our Director</a></DropdownItems>
-        <DropdownItems ><a href="/About" alt="Our History">Our History</a></DropdownItems>
-        <DropdownItems ><a href="/About" alt="Our Mission">Our Mission</a></DropdownItems>
+        <DropdownItems><a href="/OurDirector" alt="Our Director">Our Director</a></DropdownItems>
+        <DropdownItems ><a href="/OurHistory" alt="Our History">Our History</a></DropdownItems>
+        <DropdownItems ><a href="/OurMission" alt="Our Mission">Our Mission</a></DropdownItems>
       </DropdownMenu>
     </StyledPopup>
     <StyledPopup
@@ -33,8 +33,8 @@ const HeaderRight = ({ open, handleClick }) => {
       arrow={false}
     >
       <DropdownMenu>
-        <DropdownItems><a href="/Events" alt="Upcoming Events">Upcoming Events</a></DropdownItems>
-        <DropdownItems><a href="/Events" alt="Past Performances">Past Performances</a></DropdownItems>
+        <DropdownItems><a href="/UpcomingEvents" alt="Upcoming Events">Upcoming Events</a></DropdownItems>
+        <DropdownItems><a href="/PastEvents" alt="Past Performances">Past Performances</a></DropdownItems>
       </DropdownMenu>
     </StyledPopup>
     <StyledPopup
@@ -47,8 +47,8 @@ const HeaderRight = ({ open, handleClick }) => {
       arrow={false}
     >
       <DropdownMenu>
-      <DropdownItems><a href="/Contact" alt="Join Us">Join Us</a></DropdownItems>
-      <DropdownItems><a href="/Contact" alt="Book Us">Book Us</a></DropdownItems>
+      <DropdownItems><a href="/Join" alt="Join Us">Join Us</a></DropdownItems>
+      <DropdownItems><a href="/Book" alt="Book Us">Book Us</a></DropdownItems>
       <DropdownItems><a href="/Contact" alt="Contact Us">Contact Us</a></DropdownItems>
       </DropdownMenu>
     </StyledPopup>
