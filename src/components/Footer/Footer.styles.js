@@ -4,22 +4,22 @@ export const FooterContainer = styled.div`
 	height: 15vh;
 	width: 100vw;
 	display: flex;
-	background: #f8f8ff;
+	background: #2e3d36;
 	align-items: center;
 `;
 export const LogoContainer = styled.div`
 	height: auto;
-	width: auto;
-	padding: 20px;
+	width: 25%;
+	padding: 5%;
 `;
 export const Logo = styled.img`
 	width: 70%;
 `;
 export const Info = styled.div`
-	color: black;
+	color: white;
 `;
 export const CreatedBy = styled.div`
-	color: black;
+	color: white;
 	margin-left: auto;
 	margin-right: 20px;
 `;

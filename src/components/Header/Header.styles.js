@@ -5,22 +5,20 @@ export const HeaderContainer = styled.div`
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	background: #f8f8ff;
-	font-family: "Rouge Script", cursive;
+	background: #faf7ed;
+	font-family: "Playfair Display", serif;
 `;
 
 export const LogoContainer = styled.a`
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
-	margin-left: 20px;
-
-	width: 30%;
+	justify-content: flex-end;
+	width: 25%;
 `;
 
 export const Logo = styled.img`
 	height: auto;
-	width: 50%;
+	width: 70%;
 	@media (max-width: 850px) {
 		width: 50%;
 	}

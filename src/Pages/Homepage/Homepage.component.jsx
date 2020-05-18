@@ -3,6 +3,8 @@ import React from "react";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 import "./slider-styles/slider-animations.css";
+import { AiOutlineLike } from "react-icons/ai";
+import { FaFacebookSquare } from "react-icons/fa";
 import {
 	HomepageContainer,
 	About,
@@ -34,11 +36,12 @@ const slides = [
 ];
 
 const clovisAdultLogo = require("../../assets/CAE.png");
+const choirLogo = require("../../assets/Logo.png");
 
 const HomePage = () => (
 	<HomepageContainer>
 		<SliderContainer>
-			<Slider autoplay={5000}>
+			<Slider autoplay={4000}>
 				{slides.map((slide, index) => (
 					<div
 						key={index}
@@ -57,10 +60,10 @@ const HomePage = () => (
 			</Slider>
 		</SliderContainer>
 		<About>
-			<div class="head">
-				<h2>Clovis Community Choir</h2>
+			<div class="image-container">
+				<img src={choirLogo} alt="Clovis Community Choir Logo" />
 			</div>
-			<div class="body">
+			<div class="text-container">
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
 					blanditiis voluptatum explicabo, atque error aspernatur.Lorem ipsum
@@ -77,9 +80,22 @@ const HomePage = () => (
 			</div>
 		</About>
 		<Info>
-			<h2>Don't Miss Out!</h2>
-			<p>Stay up to date with our performances</p>
-			<button>Go To Upcoming Events</button>
+			<div class="info-header">
+				<h2>Don't Miss Out!</h2>
+			</div>
+			<div class="facebook-container">
+				{" "}
+				<FaFacebookSquare style={{ color: "#3B5998" }} size="4em" />
+			</div>
+			<div class="text-container">
+				<p>
+					Stay up to date with our performances and like us on Facebook!
+					<AiOutlineLike size="2em" />{" "}
+				</p>
+			</div>
+			<div class="button-container">
+				<button>Visit Our Page</button>
+			</div>
 		</Info>
 		<Sponsors>
 			<div class="text-container">

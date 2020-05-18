@@ -1,63 +1,70 @@
 import React from "react";
+import { Dropdown, Menu } from "semantic-ui-react";
 
-
-import { OptionsLinkContainer, OptionsLink, Dropdown, DropdownMenu, DropdownItems, StyledPopup} from "./headerRight.styles";
+import { OptionsLinkContainer } from "./headerRight.styles";
 const HeaderRight = ({ open, handleClick }) => {
-  return (
-    <OptionsLinkContainer open={open}>
-      <OptionsLink to="/" onClick={handleClick}>
-        Home
-      </OptionsLink>
-      <StyledPopup
-      trigger={<Dropdown> About </Dropdown>}
-      position="bottom center"
-      on="hover"
-      closeOnDocumentClick
-      mouseLeaveDelay={300}
-      mouseEnterDelay={0}
-      arrow={false}
-    >
-      <DropdownMenu>
-        <DropdownItems><a href="/OurDirector" alt="Our Director">Our Director</a></DropdownItems>
-        <DropdownItems ><a href="/OurHistory" alt="Our History">Our History</a></DropdownItems>
-        <DropdownItems ><a href="/OurMission" alt="Our Mission">Our Mission</a></DropdownItems>
-      </DropdownMenu>
-    </StyledPopup>
-    <StyledPopup
-      trigger={<Dropdown> Events </Dropdown>}
-      position="bottom center"
-      on="hover"
-      closeOnDocumentClick
-      mouseLeaveDelay={300}
-      mouseEnterDelay={0}
-      arrow={false}
-    >
-      <DropdownMenu>
-        <DropdownItems><a href="/UpcomingEvents" alt="Upcoming Events">Upcoming Events</a></DropdownItems>
-        <DropdownItems><a href="/PastEvents" alt="Past Performances">Past Performances</a></DropdownItems>
-      </DropdownMenu>
-    </StyledPopup>
-    <StyledPopup
-      trigger={<Dropdown> Contact </Dropdown>}
-      position="bottom center"
-      on="hover"
-      closeOnDocumentClick
-      mouseLeaveDelay={300}
-      mouseEnterDelay={0}
-      arrow={false}
-    >
-      <DropdownMenu>
-      <DropdownItems><a href="/Join" alt="Join Us">Join Us</a></DropdownItems>
-      <DropdownItems><a href="/Book" alt="Book Us">Book Us</a></DropdownItems>
-      <DropdownItems><a href="/Contact" alt="Contact Us">Contact Us</a></DropdownItems>
-      </DropdownMenu>
-    </StyledPopup>
-      
-      <OptionsLink to="/SignIn" onClick={handleClick}>
-        Sign In
-      </OptionsLink>
-    </OptionsLinkContainer>
-  );
+	return (
+		<OptionsLinkContainer open={open}>
+			<Menu.Item class="menu-item">
+				<a href="/">Home</a>
+			</Menu.Item>
+			<Dropdown item text="About" class="dropdown">
+				<Dropdown.Menu className="dropdown-menu">
+					<Dropdown.Item>
+						<a class="item-link" href="/OurDirector">
+							Our Director
+						</a>
+					</Dropdown.Item>
+					<Dropdown.Item>
+						<a class="item-link" href="/OurHistory">
+							Our History
+						</a>
+					</Dropdown.Item>
+					<Dropdown.Item>
+						<a class="item-link" href="/OurMission">
+							Our Mission
+						</a>
+					</Dropdown.Item>
+				</Dropdown.Menu>
+			</Dropdown>
+			<Dropdown item text="Events" class="dropdown">
+				<Dropdown.Menu className="dropdown-menu">
+					<Dropdown.Item>
+						<a class="item-link" href="/UpcomingEvents">
+							Upcoming Events
+						</a>
+					</Dropdown.Item>
+					<Dropdown.Item>
+						<a class="item-link" href="/PastEvents">
+							Past Performances
+						</a>
+					</Dropdown.Item>
+				</Dropdown.Menu>
+			</Dropdown>
+			<Dropdown item text="Contact" class="dropdown">
+				<Dropdown.Menu className="dropdown-menu">
+					<Dropdown.Item>
+						<a class="item-link" href="/Join">
+							Join Us
+						</a>
+					</Dropdown.Item>
+					<Dropdown.Item>
+						<a class="item-link" href="/Book">
+							Book Us
+						</a>
+					</Dropdown.Item>
+					<Dropdown.Item>
+						<a class="item-link" href="/Contact">
+							Contact Us
+						</a>
+					</Dropdown.Item>
+				</Dropdown.Menu>
+			</Dropdown>
+			<Menu.Item class="menu-item">
+				<a href="/">Sign In</a>
+			</Menu.Item>
+		</OptionsLinkContainer>
+	);
 };
 
 export default HeaderRight;

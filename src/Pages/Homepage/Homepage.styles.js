@@ -32,12 +32,12 @@ export const SliderContainer = styled.div`
 					font-weight: 900;
 					margin: 0 auto;
 					max-width: 840px;
-					color: #ffffff;
+					color: #faf7ed;
 					font-size: 64px;
 					line-height: 1;
 				}
 				p {
-					color: #ffffff;
+					color: #faf7ed;
 					font-size: 1.5rem;
 					line-height: 1.5;
 					margin: 20px auto 30px;
@@ -50,22 +50,22 @@ export const SliderContainer = styled.div`
 
 export const About = styled.div`
 	height: 60vh;
-	background: #bfd1fd;
+	background: #f1cfb6;
 	display: flex;
-	.head {
-		padding: 5%;
-
-		h2 {
-			font-size: 4rem;
+	.image-container {
+		width: 40vw;
+		align-self: center;
+		padding-left: 5%;
+		img {
+			width: 90%;
 		}
 	}
-
-	.body {
-		padding: 3%;
-		margin: 1%;
+	.text-container {
+		width: 60vw;
+		align-self: center;
+		padding: 10%;
 		p {
-			font-size: 1.6rem;
-			justify-self: flex-start;
+			font-size: 1.5rem;
 		}
 	}
 	.button-container {
@@ -73,7 +73,7 @@ export const About = styled.div`
 		justify-items: center;
 		flex-direction: column;
 		button {
-			font-size: 1.8rem;
+			font-size: 1.5rem;
 			padding: 1.5%;
 			cursor: pointer;
 			width: 25%;
@@ -90,7 +90,7 @@ export const About = styled.div`
 
 export const Sponsors = styled.div`
 	height: 50vh;
-	background: #d1bffd;
+	background: #bdccd0;
 	display: flex;
 	.image-container {
 		width: 40vw;
@@ -111,25 +111,34 @@ export const Sponsors = styled.div`
 
 export const Info = styled.div`
 	height: 40vh;
-	background: #f0f8ff;
+	background: #faf7ed;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	h2 {
-		font-size: 2.5rem;
+
+	.info-header {
+		h2 {
+			font-size: 2rem;
+		}
 	}
-	p {
-		font-size: 1.5rem;
+	.text-container {
+		p {
+			font-size: 1.3rem;
+			margin: 0;
+		}
 	}
-	button {
-		display: flex;
-		font-size: 1.2rem;
-		padding: 1%;
-		border-radius: 10%;
-		background: rgba(250, 250, 250, 0.8);
-		transition: 0.5s ease-in-out;
-		&:hover {
-			background: rgba(200, 200, 200, 0.9);
+	.button-container {
+		button {
+			display: flex;
+			font-size: 1.2rem;
+			padding: 10px;
+			margin: 15px;
+			border-radius: 10%;
+			background: rgba(250, 250, 250, 0.8);
+			transition: 0.5s ease-in-out;
+			&:hover {
+				background: rgba(200, 200, 200, 0.9);
+			}
 		}
 	}
 `;
