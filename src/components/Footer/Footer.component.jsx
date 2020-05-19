@@ -18,7 +18,12 @@ const Footer = () => (
 		</LogoContainer>
 		<Info>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ducimus.
+				1452 David E. Cook Way Clovis, CA 93611
+				<br />
+				559-327-2800
+				<br />
+				Ed@CCC.com
+				<br />
 			</p>
 		</Info>
 		<CreatedBy>

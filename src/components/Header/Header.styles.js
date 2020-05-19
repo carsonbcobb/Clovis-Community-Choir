@@ -7,6 +7,7 @@ export const HeaderContainer = styled.div`
 	justify-content: space-between;
 	background: #faf7ed;
 	font-family: "Playfair Display", serif;
+	color: #373737;
 `;
 
 export const LogoContainer = styled.a`

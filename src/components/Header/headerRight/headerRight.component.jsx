@@ -16,13 +16,18 @@ const HeaderRight = ({ open, handleClick }) => {
 						</a>
 					</Dropdown.Item>
 					<Dropdown.Item>
-						<a class="item-link" href="/OurHistory">
-							Our History
+						<a class="item-link" href="/OurAcc">
+							Our Accompanist
 						</a>
 					</Dropdown.Item>
 					<Dropdown.Item>
 						<a class="item-link" href="/OurMission">
 							Our Mission
+						</a>
+					</Dropdown.Item>
+					<Dropdown.Item>
+						<a class="item-link" href="/OurHistory">
+							Our History
 						</a>
 					</Dropdown.Item>
 				</Dropdown.Menu>
@@ -61,7 +66,9 @@ const HeaderRight = ({ open, handleClick }) => {
 				</Dropdown.Menu>
 			</Dropdown>
 			<Menu.Item class="menu-item">
-				<a href="/">Sign In</a>
+				<a href="https://app.choirmanager.com/en/login/" target="_new">
+					Sign In
+				</a>
 			</Menu.Item>
 		</OptionsLinkContainer>
 	);

@@ -4,7 +4,8 @@ import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 import "./slider-styles/slider-animations.css";
 import { AiOutlineLike } from "react-icons/ai";
-import { FaFacebookSquare } from "react-icons/fa";
+import { Button, Icon } from "semantic-ui-react";
+
 import {
 	HomepageContainer,
 	About,
@@ -37,6 +38,7 @@ const slides = [
 
 const clovisAdultLogo = require("../../assets/CAE.png");
 const choirLogo = require("../../assets/Logo.png");
+const facebookLogo = require("../../assets/facebook.png");
 
 const HomePage = () => (
 	<HomepageContainer>
@@ -75,7 +77,9 @@ const HomePage = () => (
 					atque error aspernatur.
 				</p>
 				<div class="button-container">
-					<button>Learn More</button>
+					<Button className="about-button" href="/OurMission">
+						Learn More
+					</Button>
 				</div>
 			</div>
 		</About>
@@ -84,17 +88,30 @@ const HomePage = () => (
 				<h2>Don't Miss Out!</h2>
 			</div>
 			<div class="facebook-container">
-				{" "}
-				<FaFacebookSquare style={{ color: "#3B5998" }} size="4em" />
+				<img src={facebookLogo} alt="Facebook Logo" />
 			</div>
 			<div class="text-container">
 				<p>
 					Stay up to date with our performances and like us on Facebook!
-					<AiOutlineLike size="2em" />{" "}
+					<AiOutlineLike size="2em" class="like-icon" />{" "}
 				</p>
 			</div>
-			<div class="button-container">
-				<button>Visit Our Page</button>
+			<div className="facebook-button-container">
+				{" "}
+				<Button
+					className="facebook-button"
+					href="https://www.facebook.com/Clovis-Community-Choir-691609034259996"
+					target="_blank"
+					color="facebook"
+					animated
+				>
+					<Button.Content visible>
+						<Icon name="facebook" /> Facebook
+					</Button.Content>
+					<Button.Content hidden>
+						<Icon name="arrow right" />
+					</Button.Content>
+				</Button>
 			</div>
 		</Info>
 		<Sponsors>

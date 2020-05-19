@@ -11,17 +11,20 @@ import {
 	Title,
 } from "../About.styles";
 
-const DirectorPage = () => (
+const AccPage = () => (
 	<AboutContainer>
 		<HeaderImage>
-			<img src={"https://i.imgur.com/al63MCf.jpg"} alt="Director: Ed Cobb" />
+			<img
+				src={"https://i.imgur.com/81S9ETW.jpg"}
+				alt="Accompanist: Randy Berger"
+			/>
 		</HeaderImage>
 		<BodyContainer>
 			<Title>
-				<h2>Our Director</h2>
+				<h2>Our Accompanist</h2>
 			</Title>
 			<BodyHeader>
-				<h1>Ed Cobb</h1>
+				<h1>Randy Berger</h1>
 			</BodyHeader>
 			<BodyText>
 				<p>
@@ -38,4 +41,4 @@ const DirectorPage = () => (
 	</AboutContainer>
 );
 
-export default DirectorPage;
+export default AccPage;

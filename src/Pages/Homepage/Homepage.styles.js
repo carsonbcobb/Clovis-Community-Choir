@@ -4,6 +4,7 @@ export const HomepageContainer = styled.div`
 	width: 100vw;
 	height: 250vh;
 	overflow-y: hidden;
+	color: #373737;
 `;
 
 export const SliderContainer = styled.div`
@@ -19,6 +20,8 @@ export const SliderContainer = styled.div`
 		}
 
 		.slider-content {
+			font-family: "Playfair Display", serif;
+
 			.inner {
 				padding: 0 70px;
 				box-sizing: border-box;
@@ -35,6 +38,7 @@ export const SliderContainer = styled.div`
 					color: #faf7ed;
 					font-size: 64px;
 					line-height: 1;
+					font-family: "Playfair Display", serif;
 				}
 				p {
 					color: #faf7ed;
@@ -72,17 +76,15 @@ export const About = styled.div`
 		display: flex;
 		justify-items: center;
 		flex-direction: column;
-		button {
+		.about-button {
 			font-size: 1.5rem;
-			padding: 1.5%;
-			cursor: pointer;
-			width: 25%;
-			align-self: center;
-			border-radius: 10%;
-			background: rgba(250, 250, 250, 0.8);
-			transition: 0.5s ease-in-out;
+			background: #f1cfb6;
+			transition: 0.75s ease;
+			border: 1px solid #b49b88;
 			&:hover {
-				background: rgba(200, 200, 200, 0.9);
+				background: #b49b88;
+				color: #faf7ed;
+				border: 1px solid #f1cfb6;
 			}
 		}
 	}
@@ -116,29 +118,40 @@ export const Info = styled.div`
 	align-items: center;
 	flex-direction: column;
 
+	.facebook-container {
+		height: auto;
+		width: 25%;
+		display: flex;
+		justify-content: center;
+
+		img {
+			width: 50%;
+		}
+	}
+
 	.info-header {
 		h2 {
+			transform: translateY(50%);
 			font-size: 2rem;
 		}
 	}
 	.text-container {
+		transform: translateY(-80%);
 		p {
-			font-size: 1.3rem;
+			font-size: 1.7rem;
 			margin: 0;
+			.like-icon {
+				color: #3b5998;
+				transform: translateY(15%);
+			}
 		}
 	}
-	.button-container {
-		button {
-			display: flex;
-			font-size: 1.2rem;
-			padding: 10px;
-			margin: 15px;
-			border-radius: 10%;
-			background: rgba(250, 250, 250, 0.8);
-			transition: 0.5s ease-in-out;
-			&:hover {
-				background: rgba(200, 200, 200, 0.9);
-			}
+
+	.facebook-button-container {
+		transform: translateY(-90%);
+
+		.facebook-button {
+			padding: 15px;
 		}
 	}
 `;

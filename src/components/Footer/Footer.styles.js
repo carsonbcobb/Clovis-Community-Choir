@@ -16,6 +16,7 @@ export const Logo = styled.img`
 	width: 70%;
 `;
 export const Info = styled.div`
+	transform: translateX(-35%);
 	color: white;
 `;
 export const CreatedBy = styled.div`
