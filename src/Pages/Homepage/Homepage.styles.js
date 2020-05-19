@@ -67,9 +67,11 @@ export const About = styled.div`
 	.text-container {
 		width: 60vw;
 		align-self: center;
-		padding: 10%;
+		padding: 5%;
+
 		p {
-			font-size: 1.5rem;
+			font-size: 1rem;
+			font-weight: bold;
 		}
 	}
 	.button-container {
@@ -140,6 +142,7 @@ export const Info = styled.div`
 		p {
 			font-size: 1.7rem;
 			margin: 0;
+
 			.like-icon {
 				color: #3b5998;
 				transform: translateY(15%);

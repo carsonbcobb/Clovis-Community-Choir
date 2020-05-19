@@ -67,17 +67,35 @@ const HomePage = () => (
 			</div>
 			<div class="text-container">
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
-					blanditiis voluptatum explicabo, atque error aspernatur.Lorem ipsum
-					dolor sit amet, consectetur adipisicing elit. Modi blanditiis
-					voluptatum explicabo, atque error aspernatur.Lorem ipsum dolor sit
-					amet, consectetur adipisicing elit. Modi blanditiis voluptatum
-					explicabo, atque error aspernatur.Lorem ipsum dolor sit amet,
-					consectetur adipisicing elit. Modi blanditiis voluptatum explicabo,
-					atque error aspernatur.
+					The Clovis Community Choir is a non-auditioned choral group for
+					singers of all backgrounds, with a membership of 90-plus voices. Our
+					singers range from those who are highly skilled to those who have
+					never sung in a choir before, but we all have these things in common:
+					*Love singing great choral music of all styles: Inspirational ballads
+					to heartwarming sacred favorites.  Quality arrangements of Pop Music
+					and Show Tunes. Patriotic and Americana to Classical pieces by the
+					masters. A Capella selections or accompanied by varieties of
+					instruments!
+				</p>
+				<p>
+					 *Enjoy the weekly aspect of all that takes place in a fast paced and
+					fun, yet challenging rehearsal with other singers from around the
+					community…each of varying age and experience.  Learning from each
+					other.  Growing together, musically and socially.  A “high note” of
+					the week! *Desire the thrill of presenting top-notch concerts that
+					bring joy and inspiration to our community in ways that only choral
+					music, presented with dedication and excellence, can do!
+				</p>
+				<p>
+					The choir rehearses weekly during its season which is broken into 3
+					segments…late August through December, February through April, and May
+					through June. We are sponsored by Clovis Adult School Community
+					Education, and each year the Choir performs 4 major concerts, and
+					various other performances around the community…and, our concerts are
+					free to the public!
 				</p>
 				<div class="button-container">
-					<Button className="about-button" href="/OurMission">
+					<Button className="about-button" href="/Join">
 						Learn More
 					</Button>
 				</div>

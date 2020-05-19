@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
 	width: 100vw;
-	height: 150vh;
+	height: 200vh;
 	overflow-y: hidden;
 	background: #faf7ed;
 	color: #373737;
@@ -16,7 +16,7 @@ export const HeaderImage = styled.div`
 	}
 `;
 export const BodyContainer = styled.div`
-	height: 75vh;
+	height: 125vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -44,6 +44,6 @@ export const BodyHeader = styled.div`
 export const BodyText = styled.div`
 	padding: 3%;
 	p {
-		font-size: 2rem;
+		font-size: 1.6rem;
 	}
 `;

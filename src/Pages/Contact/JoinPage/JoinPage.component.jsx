@@ -16,7 +16,7 @@ import {
 const JoinPage = () => (
 	<ContactContainer>
 		<HeaderImage>
-			<img src={"https://i.imgur.com/5BKXT6N.jpg"} alt="Director: Ed Cobb" />
+			<img src={"https://i.imgur.com/3onXk7q.jpg"} alt="Director: Ed Cobb" />
 		</HeaderImage>
 		<BodyContainer>
 			<Title>

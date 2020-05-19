@@ -15,7 +15,7 @@ const AccPage = () => (
 	<AboutContainer>
 		<HeaderImage>
 			<img
-				src={"https://i.imgur.com/81S9ETW.jpg"}
+				src={"https://i.imgur.com/uhE7waY.jpg"}
 				alt="Accompanist: Randy Berger"
 			/>
 		</HeaderImage>

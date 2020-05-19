@@ -14,7 +14,7 @@ import {
 const MissionPage = () => (
 	<AboutContainer>
 		<HeaderImage>
-			<img src={"https://i.imgur.com/bx4ItLb.jpg"} alt="Our Mission" />
+			<img src={"https://i.imgur.com/U1rNSCs.jpg?2"} alt="Our Mission" />
 		</HeaderImage>
 		<BodyContainer>
 			<Title>

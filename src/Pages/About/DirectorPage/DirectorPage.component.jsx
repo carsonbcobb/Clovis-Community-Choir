@@ -14,7 +14,7 @@ import {
 const DirectorPage = () => (
 	<AboutContainer>
 		<HeaderImage>
-			<img src={"https://i.imgur.com/al63MCf.jpg"} alt="Director: Ed Cobb" />
+			<img src={"https://i.imgur.com/zV7XAWs.jpg?4"} alt="Director: Ed Cobb" />
 		</HeaderImage>
 		<BodyContainer>
 			<Title>

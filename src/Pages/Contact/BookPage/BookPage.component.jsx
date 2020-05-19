@@ -16,7 +16,7 @@ import {
 const BookPage = () => (
 	<ContactContainer>
 		<HeaderImage>
-			<img src={"https://i.imgur.com/qgYkAXb.jpg"} alt="Contact Header" />
+			<img src={"https://i.imgur.com/zchbgqy.jpg?1"} alt="Contact Header" />
 		</HeaderImage>
 		<BodyContainer>
 			<Title>
@@ -31,11 +31,6 @@ const BookPage = () => (
 					Veniam tempore qui sequi sint harum, asperiores quas quia dolor cum
 					nam cumque aliquam. Minus nulla cum sed facilis earum architecto
 					deserunt officiis perspiciatis.
-				</p>
-				<p>
-					Reach out to us via:
-					<br />
-					Email: ed@ccc.com <br />
 				</p>
 			</BodyText>
 			<ButtonContainer>

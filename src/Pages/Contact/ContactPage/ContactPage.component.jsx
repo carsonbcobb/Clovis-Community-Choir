@@ -16,7 +16,7 @@ import {
 const ContactPage = () => (
 	<ContactContainer>
 		<HeaderImage>
-			<img src={"https://i.imgur.com/MiHwCBX.jpg"} alt="Contact Header" />
+			<img src={"https://i.imgur.com/vZqQBG5.jpg"} alt="Contact Header" />
 		</HeaderImage>
 		<BodyContainer>
 			<Title>
@@ -30,11 +30,6 @@ const ContactPage = () => (
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, ex?
 					Veniam tempore qui sequi sint harum, asperiores quas quia dolor cum
 					nam cumque aliquam.
-				</p>
-				<p>
-					Reach out to us via:
-					<br />
-					Email: ed@ccc.com <br />
 				</p>
 			</BodyText>
 			<ButtonContainer>
