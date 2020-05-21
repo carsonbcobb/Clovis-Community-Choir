@@ -35,6 +35,10 @@ export const ItemBlock = styled.div`
 	text-align: center;
 	h3 {
 		font-family: "Playfair Display", serif;
+		transition: 1s ease-in-out;
+	}
+	span {
+		transition: 1s ease-in-out;
 	}
 	img {
 		transition: 1s ease-in-out;
@@ -52,17 +56,19 @@ export const ItemContainer = styled.div`
 	font-family: "Playfair Display", serif;
 
 	&:hover {
-		background: #bdccd0;
+		background: #2e3d36;
 		border: 2px solid #faf7ed;
 		transition: 1s ease-in-out;
 
 		h3 {
 			font-size: 1.8rem;
 			transition: 1s ease-in-out;
+			color: #faf7ed;
 		}
 		span {
 			font-size: 1.2rem;
 			transition: 1s ease-in-out;
+			color: #faf7ed;
 		}
 		img {
 			height: auto;

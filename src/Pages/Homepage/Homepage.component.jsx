@@ -77,23 +77,7 @@ const HomePage = () => (
 					masters. A Capella selections or accompanied by varieties of
 					instruments!
 				</p>
-				<p>
-					 *Enjoy the weekly aspect of all that takes place in a fast paced and
-					fun, yet challenging rehearsal with other singers from around the
-					community…each of varying age and experience.  Learning from each
-					other.  Growing together, musically and socially.  A “high note” of
-					the week! *Desire the thrill of presenting top-notch concerts that
-					bring joy and inspiration to our community in ways that only choral
-					music, presented with dedication and excellence, can do!
-				</p>
-				<p>
-					The choir rehearses weekly during its season which is broken into 3
-					segments…late August through December, February through April, and May
-					through June. We are sponsored by Clovis Adult School Community
-					Education, and each year the Choir performs 4 major concerts, and
-					various other performances around the community…and, our concerts are
-					free to the public!
-				</p>
+
 				<div class="button-container">
 					<Button className="about-button" href="/Join">
 						Learn More

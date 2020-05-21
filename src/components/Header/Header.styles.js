@@ -16,6 +16,11 @@ export const LogoContainer = styled.a`
 	justify-content: flex-end;
 	width: 25%;
 	cursor: pointer;
+	@media (max-width: 414px) and (max-height: 896px) {
+		width: 100%;
+		justify-content: flex-start;
+		padding-left: 5%;
+	}
 `;
 
 export const Logo = styled.img`

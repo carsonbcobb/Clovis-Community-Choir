@@ -1,76 +1,72 @@
 import React from "react";
-import { Dropdown, Menu } from "semantic-ui-react";
 
-import { OptionsLinkContainer } from "./headerRight.styles";
+import { HeaderContainer, MainNav, SubMenu } from "./headerRight.styles";
 const HeaderRight = ({ open, handleClick }) => {
 	return (
-		<OptionsLinkContainer open={open}>
-			<Menu.Item class="menu-item">
-				<a href="/">Home</a>
-			</Menu.Item>
-			<Dropdown item text="About" class="dropdown">
-				<Dropdown.Menu className="dropdown-menu">
-					<Dropdown.Item>
-						<a class="item-link" href="/OurDirector">
-							Our Director
-						</a>
-					</Dropdown.Item>
-					<Dropdown.Item>
-						<a class="item-link" href="/OurAcc">
-							Our Accompanist
-						</a>
-					</Dropdown.Item>
-					<Dropdown.Item>
-						<a class="item-link" href="/OurMission">
-							Our Mission
-						</a>
-					</Dropdown.Item>
-					<Dropdown.Item>
-						<a class="item-link" href="/OurHistory">
-							Our History
-						</a>
-					</Dropdown.Item>
-				</Dropdown.Menu>
-			</Dropdown>
-			<Dropdown item text="Events" class="dropdown">
-				<Dropdown.Menu className="dropdown-menu">
-					<Dropdown.Item>
-						<a class="item-link" href="/UpcomingEvents">
-							Upcoming Events
-						</a>
-					</Dropdown.Item>
-					<Dropdown.Item>
-						<a class="item-link" href="/PastEvents">
-							Past Performances
-						</a>
-					</Dropdown.Item>
-				</Dropdown.Menu>
-			</Dropdown>
-			<Dropdown item text="Contact" class="dropdown">
-				<Dropdown.Menu className="dropdown-menu">
-					<Dropdown.Item>
-						<a class="item-link" href="/Join">
-							Join Us
-						</a>
-					</Dropdown.Item>
-					<Dropdown.Item>
-						<a class="item-link" href="/Book">
-							Book Us
-						</a>
-					</Dropdown.Item>
-					<Dropdown.Item>
-						<a class="item-link" href="/Contact">
-							Contact Us
-						</a>
-					</Dropdown.Item>
-				</Dropdown.Menu>
-			</Dropdown>
-			<Menu.Item class="menu-item">
-				<a href="https://app.choirmanager.com/en/login/" target="_new">
-					Sign In
-				</a>
-			</Menu.Item>
-		</OptionsLinkContainer>
+		<HeaderContainer open={open}>
+			<MainNav>
+				<li>
+					<a href="/">Home</a>
+				</li>
+
+				<li>
+					<p>About</p>
+
+					<SubMenu>
+						<li>
+							<a href="/OurDirector">Our Director</a>
+						</li>
+
+						<li>
+							<a href="/OurAcc">Our Accompanist</a>
+						</li>
+						<li>
+							<a href="/OurMission">Our Mission</a>
+						</li>
+						<li>
+							<a href="/OurHistory">Our History</a>
+						</li>
+					</SubMenu>
+				</li>
+
+				<li>
+					<p>Events</p>
+
+					<SubMenu>
+						<li>
+							<a href="/UpcomingEvents">Upcoming Events</a>
+						</li>
+
+						<li>
+							<a href="/PastEvents">Past Performances</a>
+						</li>
+					</SubMenu>
+				</li>
+
+				<li>
+					<p>Contact</p>
+
+					<SubMenu>
+						<li>
+							<a href="/Join">Join Us</a>
+						</li>
+
+						<li>
+							<a href="/Book">Book Us</a>
+						</li>
+						<li>
+							<a href="/Contact">Contact Us</a>
+						</li>
+					</SubMenu>
+				</li>
+
+				<li>
+					<a href="https://app.choirmanager.com/en/login/" target="_new">
+						Sign In
+					</a>
+				</li>
+			</MainNav>
+		</HeaderContainer>
 	);
 };
 

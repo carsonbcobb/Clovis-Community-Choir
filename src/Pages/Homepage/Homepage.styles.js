@@ -15,7 +15,8 @@ export const SliderContainer = styled.div`
 		.previousButton,
 		.nextButton {
 			polygon {
-				fill: rgba(236, 239, 238, 0.8);
+				fill: #faf7ed;
+				opacity: 0.8;
 			}
 		}
 
@@ -70,7 +71,7 @@ export const About = styled.div`
 		padding: 5%;
 
 		p {
-			font-size: 1rem;
+			font-size: 1.5rem;
 			font-weight: bold;
 		}
 	}
@@ -87,6 +88,14 @@ export const About = styled.div`
 				background: #b49b88;
 				color: #faf7ed;
 				border: 1px solid #f1cfb6;
+			}
+		}
+	}
+
+	@media (max-width: 414px) and (max-height: 896px) {
+		.text-container {
+			p {
+				font-size: 0.9rem;
 			}
 		}
 	}
@@ -111,6 +120,14 @@ export const Sponsors = styled.div`
 			font-size: 1.8rem;
 		}
 	}
+	@media (max-width: 414px) and (max-height: 896px) {
+		.text-container {
+			padding: 5%;
+			p {
+				font-size: 1.3rem;
+			}
+		}
+	}
 `;
 
 export const Info = styled.div`
@@ -121,7 +138,6 @@ export const Info = styled.div`
 	flex-direction: column;
 
 	.facebook-container {
-		height: auto;
 		width: 25%;
 		display: flex;
 		justify-content: center;
@@ -155,6 +171,36 @@ export const Info = styled.div`
 
 		.facebook-button {
 			padding: 15px;
+		}
+	}
+
+	@media (max-width: 414px) and (max-height: 896px) {
+		.info-header {
+			h2 {
+				transform: translateY(80%);
+				font-size: 2rem;
+			}
+		}
+		.text-container {
+			transform: translateY(0%);
+			text-align: center;
+			p {
+				font-size: 1.4rem;
+				padding: 5%;
+			}
+		}
+
+		.facebook-button-container {
+			transform: translateY(0%);
+		}
+		.facebook-container {
+			height: auto;
+			width: 35%;
+			transform: translateY(15%);
+
+			img {
+				width: 100%;
+			}
 		}
 	}
 `;

@@ -1,19 +1,37 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { GlobalStyle } from "./global.styles";
 import { Route, Switch } from "react-router-dom";
-
+import Spinner from "./components/Spinner/Spinner.component";
 import Header from "./components/Header/Header.component";
 
-import HomePage from "./Pages/Homepage/Homepage.component";
-import DirectorPage from "./Pages/About/DirectorPage/DirectorPage.component";
-import AccPage from "./Pages/About/AccPage/AccPage.component";
-import HistoryPage from "./Pages/About/HistoryPage/HistoryPage.component";
-import MissionPage from "./Pages/About/MissionPage/MissionPage.component";
-import BookPage from "./Pages/Contact/BookPage/BookPage.component";
-import ContactPage from "./Pages/Contact/ContactPage/ContactPage.component";
-import JoinPage from "./Pages/Contact/JoinPage/JoinPage.component";
-import PastPage from "./Pages/Events/PastPage/PastPage.component";
-import UpcomingPage from "./Pages/Events/UpcomingPage/UpcomingPage.component";
+const UpcomingPage = lazy(() =>
+	import("./Pages/Events/UpcomingPage/UpcomingPage.component")
+);
+const PastPage = lazy(() =>
+	import("./Pages/Events/PastPage/PastPage.component")
+);
+const JoinPage = lazy(() =>
+	import("./Pages/Contact/JoinPage/JoinPage.component")
+);
+const ContactPage = lazy(() =>
+	import("./Pages/Contact/ContactPage/ContactPage.component")
+);
+const BookPage = lazy(() =>
+	import("./Pages/Contact/BookPage/BookPage.component")
+);
+const MissionPage = lazy(() =>
+	import("./Pages/About/MissionPage/MissionPage.component")
+);
+const HistoryPage = lazy(() =>
+	import("./Pages/About/HistoryPage/HistoryPage.component")
+);
+const AccPage = lazy(() => import("./Pages/About/AccPage/AccPage.component"));
+
+const DirectorPage = lazy(() =>
+	import("./Pages/About/DirectorPage/DirectorPage.component")
+);
+
+const HomePage = lazy(() => import("./Pages/Homepage/Homepage.component"));
 
 function App() {
 	return (
@@ -21,16 +39,18 @@ function App() {
 			<GlobalStyle />
 			<Header />
 			<Switch>
-				<Route exact path="/" component={HomePage} />
-				<Route exact path="/OurDirector" component={DirectorPage} />
-				<Route exact path="/OurAcc" component={AccPage} />
-				<Route exact path="/OurHistory" component={HistoryPage} />
-				<Route exact path="/OurMission" component={MissionPage} />
-				<Route exact path="/Book" component={BookPage} />
-				<Route exact path="/Contact" component={ContactPage} />
-				<Route exact path="/Join" component={JoinPage} />
-				<Route exact path="/UpcomingEvents" component={UpcomingPage} />
-				<Route exact path="/PastEvents" component={PastPage} />
+				<Suspense fallback={<Spinner />}>
+					<Route exact path="/" component={HomePage} />
+					<Route exact path="/OurDirector" component={DirectorPage} />
+					<Route exact path="/OurAcc" component={AccPage} />
+					<Route exact path="/OurHistory" component={HistoryPage} />
+					<Route exact path="/OurMission" component={MissionPage} />
+					<Route exact path="/Book" component={BookPage} />
+					<Route exact path="/Contact" component={ContactPage} />
+					<Route exact path="/Join" component={JoinPage} />
+					<Route exact path="/UpcomingEvents" component={UpcomingPage} />
+					<Route exact path="/PastEvents" component={PastPage} />
+				</Suspense>
 			</Switch>
 		</div>
 	);

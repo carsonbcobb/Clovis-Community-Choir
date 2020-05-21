@@ -6,9 +6,7 @@ body {
   color: #373737;
 
   
-  @media screen and (max-width: 800px){
-      padding: 10px;
-  }
+  
 }
 a {
   text-decoration: none;

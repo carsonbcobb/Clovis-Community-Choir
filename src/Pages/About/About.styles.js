@@ -40,10 +40,22 @@ export const BodyHeader = styled.div`
 	h1 {
 		font-size: 2.8rem;
 	}
+	@media (max-width: 414px) and (max-height: 896px) {
+		text-align: center;
+		padding: 1%;
+		h1 {
+			font-size: 1.8rem;
+		}
+	}
 `;
 export const BodyText = styled.div`
 	padding: 3%;
 	p {
 		font-size: 1.6rem;
+	}
+	@media (max-width: 414px) and (max-height: 896px) {
+		p {
+			font-size: 1.2rem;
+		}
 	}
 `;

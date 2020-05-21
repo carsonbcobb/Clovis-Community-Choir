@@ -39,12 +39,20 @@ export const BodyHeader = styled.div`
 	font-family: "Playfair Display", serif;
 	h1 {
 		font-size: 2.8rem;
+		@media (max-width: 414px) and (max-height: 896px) {
+			font-size: 2rem;
+			text-align: center;
+		}
 	}
 `;
 export const BodyText = styled.div`
 	padding: 3%;
 	p {
 		font-size: 2rem;
+		@media (max-width: 414px) and (max-height: 896px) {
+			font-size: 1.7rem;
+			text-align: center;
+		}
 	}
 `;
 
@@ -53,9 +61,14 @@ export const ButtonContainer = styled.div`
 		font-size: 1.8rem;
 		background: #f1cfb6;
 		transition: 0.75s ease;
+
 		&:hover {
 			background: #b49b88;
 			color: #faf7ed;
 		}
+	}
+
+	@media (max-width: 414px) and (max-height: 896px) {
+		padding: 15px;
 	}
 `;
