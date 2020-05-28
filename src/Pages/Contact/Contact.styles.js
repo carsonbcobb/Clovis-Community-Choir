@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
 	width: 100vw;
-	height: 150vh;
-	overflow-y: hidden;
+	height: 145vh;
 	background: #faf7ed;
 	color: #373737;
+	@media (max-width: 414px) and (max-height: 736px) {
+	}
 `;
 export const HeaderImage = styled.div`
 	height: 60vh;
@@ -16,7 +17,7 @@ export const HeaderImage = styled.div`
 	}
 `;
 export const BodyContainer = styled.div`
-	height: 75vh;
+	height: 85vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -52,6 +53,9 @@ export const BodyText = styled.div`
 		@media (max-width: 414px) and (max-height: 896px) {
 			font-size: 1.7rem;
 			text-align: center;
+		}
+		@media (max-width: 414px) and (max-height: 896px) {
+			font-size: 1.4rem;
 		}
 	}
 `;

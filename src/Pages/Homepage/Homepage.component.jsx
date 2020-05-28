@@ -19,19 +19,19 @@ const slides = [
 	{
 		title: "Clovis Community Choir",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi blanditiis voluptatum explicabo, atque error aspernatur.",
+			"Bringing the beauty of Choral Music to the Fresno area since 2014",
 		image: "https://i.imgur.com/GEKNBEZ.jpg?2",
 	},
 	{
 		title: "Come Sing With Us!",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi blanditiis voluptatum explicabo, atque error aspernatur.",
+			"We would love for you to join our choir family! Come join us!",
 		image: "https://i.imgur.com/xCzjSX9.jpg",
 	},
 	{
 		title: "A Diverse Musical Sound",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi blanditiis voluptatum explicabo, atque error aspernatur.",
+			"Come take a trip with us, as we sing songs from across the world, past to present",
 		image: "https://i.imgur.com/h123Hgn.jpg",
 	},
 ];
@@ -67,19 +67,15 @@ const HomePage = () => (
 			</div>
 			<div class="text-container">
 				<p>
-					The Clovis Community Choir is a non-auditioned choral group for
-					singers of all backgrounds, with a membership of 90-plus voices. Our
-					singers range from those who are highly skilled to those who have
-					never sung in a choir before, but we all have these things in common:
-					*Love singing great choral music of all styles: Inspirational ballads
-					to heartwarming sacred favorites.  Quality arrangements of Pop Music
-					and Show Tunes. Patriotic and Americana to Classical pieces by the
-					masters. A Capella selections or accompanied by varieties of
-					instruments!
+					The Clovis Community Choir is here to provide an opportunity for
+					singers of all experience levels an encouraging and welcoming
+					environment in which to sing a variety of quality choral music. We
+					also strive to present enriching and inspiring concerts for all ages
+					in the great Clovis/Fresno community
 				</p>
 
 				<div class="button-container">
-					<Button className="about-button" href="/Join">
+					<Button className="about-button" href="/AboutUs">
 						Learn More
 					</Button>
 				</div>
@@ -119,16 +115,14 @@ const HomePage = () => (
 		<Sponsors>
 			<div class="text-container">
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
-					est.Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
-					est.Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, est.
+					Clovis Community Choir is supported, in part, by Clovis Adult
+					Education through the Clovis Unified School District.
 				</p>
 			</div>
 			<div class="image-container">
 				<img src={clovisAdultLogo} alt="Clovis Adult Logo" />
 			</div>
 		</Sponsors>
-
 		<Footer />
 	</HomepageContainer>
 );

@@ -13,10 +13,15 @@ const BurgerContainer = styled.div`
 		justify-content: space-around;
 		flex-flow: column nowrap;
 	}
+	@media (max-width: 320px) and (max-height: 568px) {
+		top: 2.75em;
+		right: 1.75em;
+	}
+
 	div {
 		width: 2rem;
 		height: 0.25rem;
-		background-color: ${({ open }) => (open ? "white" : "black")};
+		background-color: ${({ open }) => (open ? "#faf7ed" : "#373737")};
 		border-radius: 10px;
 		transform-origin: 1px;
 		transition: all 0.3s linear;

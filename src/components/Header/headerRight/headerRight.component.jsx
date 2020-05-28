@@ -14,15 +14,16 @@ const HeaderRight = ({ open, handleClick }) => {
 
 					<SubMenu>
 						<li>
+							<a href="/AboutUs">About Us</a>
+						</li>
+						<li>
 							<a href="/OurDirector">Our Director</a>
 						</li>
 
 						<li>
 							<a href="/OurAcc">Our Accompanist</a>
 						</li>
-						<li>
-							<a href="/OurMission">Our Mission</a>
-						</li>
+
 						<li>
 							<a href="/OurHistory">Our History</a>
 						</li>

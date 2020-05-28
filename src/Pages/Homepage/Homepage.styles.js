@@ -3,14 +3,13 @@ import styled from "styled-components";
 export const HomepageContainer = styled.div`
 	width: 100vw;
 	height: 250vh;
-	overflow-y: hidden;
 	color: #373737;
 `;
 
 export const SliderContainer = styled.div`
 	.slider {
 		width: 100vw;
-		height: 87vh;
+		height: 90vh;
 
 		.previousButton,
 		.nextButton {
@@ -40,6 +39,12 @@ export const SliderContainer = styled.div`
 					font-size: 64px;
 					line-height: 1;
 					font-family: "Playfair Display", serif;
+					@media (max-width: 414px) and (max-height: 896px) {
+						font-size: 4rem;
+					}
+					@media (max-width: 320px) and (max-height: 568px) {
+						font-size: 3rem;
+					}
 				}
 				p {
 					color: #faf7ed;
@@ -47,6 +52,12 @@ export const SliderContainer = styled.div`
 					line-height: 1.5;
 					margin: 20px auto 30px;
 					max-width: 640px;
+					@media (max-width: 414px) and (max-height: 896px) {
+						font-weight: 600;
+					}
+					@media (max-width: 320px) and (max-height: 568px) {
+						font-size: 1rem;
+					}
 				}
 			}
 		}
@@ -57,6 +68,7 @@ export const About = styled.div`
 	height: 60vh;
 	background: #f1cfb6;
 	display: flex;
+
 	.image-container {
 		width: 40vw;
 		align-self: center;
@@ -99,6 +111,26 @@ export const About = styled.div`
 			}
 		}
 	}
+
+	@media (max-width: 375px) and (max-height: 667px) {
+		.text-container {
+			p {
+				font-size: 0.8rem;
+			}
+		}
+	}
+	@media (max-width: 320px) and (max-height: 568px) {
+		.text-container {
+			p {
+				font-size: 0.7rem;
+			}
+		}
+		.button-container {
+			.about-button {
+				font-size: 1rem;
+			}
+		}
+	}
 `;
 
 export const Sponsors = styled.div`
@@ -124,7 +156,16 @@ export const Sponsors = styled.div`
 		.text-container {
 			padding: 5%;
 			p {
+				padding-left: 5%;
+
 				font-size: 1.3rem;
+			}
+		}
+	}
+	@media (max-width: 375px) and (max-height: 667px) {
+		.text-container {
+			p {
+				font-size: 1.1rem;
 			}
 		}
 	}
@@ -185,7 +226,7 @@ export const Info = styled.div`
 			transform: translateY(0%);
 			text-align: center;
 			p {
-				font-size: 1.4rem;
+				font-size: 1.3rem;
 				padding: 5%;
 			}
 		}
@@ -200,6 +241,42 @@ export const Info = styled.div`
 
 			img {
 				width: 100%;
+			}
+		}
+	}
+	@media (max-width: 375px) and (max-height: 812px) {
+		.text-container {
+			p {
+				font-size: 1.2rem;
+			}
+		}
+	}
+
+	@media (max-width: 414px) and (max-height: 736px) {
+		.text-container {
+			transform: translateY(-20%);
+			p {
+				font-size: 1.2rem;
+			}
+		}
+		.facebook-button-container {
+			transform: translateY(-70%);
+		}
+		.facebook-container {
+			img {
+				width: 90%;
+			}
+		}
+	}
+	@media (max-width: 375px) and (max-height: 667px) {
+		.facebook-container {
+			img {
+				width: 80%;
+			}
+		}
+		.text-container {
+			p {
+				font-size: 1rem;
 			}
 		}
 	}

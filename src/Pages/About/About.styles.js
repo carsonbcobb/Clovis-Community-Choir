@@ -6,6 +6,9 @@ export const AboutContainer = styled.div`
 	overflow-y: hidden;
 	background: #faf7ed;
 	color: #373737;
+	@media (max-width: 320px) and (max-height: 568px) {
+		height: 250vh;
+	}
 `;
 export const HeaderImage = styled.div`
 	height: 60vh;
@@ -20,6 +23,9 @@ export const BodyContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	@media (max-width: 320px) and (max-height: 568px) {
+		height: 175vh;
+	}
 `;
 
 export const Title = styled.div`
@@ -47,6 +53,11 @@ export const BodyHeader = styled.div`
 			font-size: 1.8rem;
 		}
 	}
+	@media (max-width: 375px) and (max-height: 667px) {
+		h1 {
+			font-size: 1.4rem;
+		}
+	}
 `;
 export const BodyText = styled.div`
 	padding: 3%;
@@ -56,6 +67,17 @@ export const BodyText = styled.div`
 	@media (max-width: 414px) and (max-height: 896px) {
 		p {
 			font-size: 1.2rem;
+		}
+	}
+	@media (max-width: 375px) and (max-height: 812px) {
+		p {
+			font-size: 1.1rem;
+		}
+	}
+
+	@media (max-width: 375px) and (max-height: 667px) {
+		p {
+			font-size: 1rem;
 		}
 	}
 `;

@@ -23,14 +23,14 @@ const BookPage = () => (
 				<h2>Book Us</h2>
 			</Title>
 			<BodyHeader>
-				<h1>We would love to sing for you!</h1>
+				<h1>Interested in having the Choir sing for an event?</h1>
 			</BodyHeader>
 			<BodyText>
 				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, ex?
-					Veniam tempore qui sequi sint harum, asperiores quas quia dolor cum
-					nam cumque aliquam. Minus nulla cum sed facilis earum architecto
-					deserunt officiis perspiciatis.
+					Our season typically includes 4 concerts with room for a few other
+					events around the community. We have also provided small groups for
+					specific functions. If you have an idea or an event for which you’d
+					like us to participate, give us a call or send a request by email.
 				</p>
 			</BodyText>
 			<ButtonContainer>

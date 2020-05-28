@@ -27,9 +27,8 @@ const ContactPage = () => (
 			</BodyHeader>
 			<BodyText>
 				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, ex?
-					Veniam tempore qui sequi sint harum, asperiores quas quia dolor cum
-					nam cumque aliquam.
+					We’d love to hear from you! You can always reach us through Clovis
+					Community Education, or simply sending an email.
 				</p>
 			</BodyText>
 			<ButtonContainer>

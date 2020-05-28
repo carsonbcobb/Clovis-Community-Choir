@@ -8,6 +8,18 @@ export const PastContainer = styled.div`
 	flex-direction: column;
 	background: #f1cfb6;
 	font-family: "Playfair Display", serif;
+	@media (max-width: 414px) and (max-height: 896px) {
+		height: 450vh;
+	}
+	@media (max-width: 414px) and (max-height: 896px) {
+		height: 475vh;
+	}
+	@media (max-width: 414px) and (max-height: 736px) {
+		height: 575vh;
+	}
+	@media (max-width: 320px) and (max-height: 568px) {
+		height: 675vh;
+	}
 `;
 export const HeaderContainer = styled.div`
 	height: 25vh;
@@ -20,12 +32,33 @@ export const HeaderContainer = styled.div`
 		margin-right: auto;
 		font-family: "Playfair Display", serif;
 	}
+	@media (max-width: 414px) and (max-height: 896px) {
+		padding: 10%;
+		h1 {
+			font-size: 2.5rem;
+		}
+	}
 `;
 export const BodyContainer = styled.div`
 	height: 365vh;
 	display: grid;
 	justify-content: center;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
+	@media (max-width: 414px) and (max-height: 896px) {
+		grid-template-columns: 1fr 1fr;
+		height: 415vh;
+	}
+	@media (max-width: 375px) and (max-height: 812px) {
+		grid-template-columns: 1fr 1fr;
+		height: 435vh;
+	}
+	@media (max-width: 414px) and (max-height: 736px) {
+		grid-template-columns: 1fr 1fr;
+		height: 535vh;
+	}
+	@media (max-width: 320px) and (max-height: 568px) {
+		height: 635vh;
+	}
 `;
 export const ItemBlock = styled.div`
 	display: grid;
@@ -75,6 +108,14 @@ export const ItemContainer = styled.div`
 			transition: 1s ease-in-out;
 
 			width: 50%;
+		}
+	}
+
+	@media (max-width: 414px) and (max-height: 896px) {
+		&:hover {
+			img {
+				width: 80%;
+			}
 		}
 	}
 `;

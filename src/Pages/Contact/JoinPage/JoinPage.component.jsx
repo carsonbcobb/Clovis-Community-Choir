@@ -23,16 +23,15 @@ const JoinPage = () => (
 				<h2>Join Us</h2>
 			</Title>
 			<BodyHeader>
-				<h1>Become a member of our choir</h1>
+				<h1>Would you like to sing with us?</h1>
 			</BodyHeader>
 			<BodyText>
 				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, ex?
-					Veniam tempore qui sequi sint harum, asperiores quas quia dolor cum
-					nam cumque aliquam. Minus nulla cum sed facilis earum architecto
-					deserunt officiis perspiciatis dicta. Rem repudiandae a fugiat, sequi
-					laudantium consequatur consectetur nesciunt deleniti quidem. Sit fugit
-					error quibusdam.
+					We are always welcoming new singers to the Clovis Community Choir!
+					And, remember…there are no auditions. Our members have varying levels
+					of musical experience, so don’t worry if you’ve never sung in a group
+					before, or it’s been a long time. We’ll be there to help you. Sign up
+					online, or by phone, or coming to a rehearsal. It’s that easy!
 				</p>
 			</BodyText>
 			<ButtonContainer>

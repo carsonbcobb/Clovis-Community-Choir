@@ -19,8 +19,8 @@ const ContactPage = lazy(() =>
 const BookPage = lazy(() =>
 	import("./Pages/Contact/BookPage/BookPage.component")
 );
-const MissionPage = lazy(() =>
-	import("./Pages/About/MissionPage/MissionPage.component")
+const AboutPage = lazy(() =>
+	import("./Pages/About/AboutPage/AboutPage.component")
 );
 const HistoryPage = lazy(() =>
 	import("./Pages/About/HistoryPage/HistoryPage.component")
@@ -44,7 +44,7 @@ function App() {
 					<Route exact path="/OurDirector" component={DirectorPage} />
 					<Route exact path="/OurAcc" component={AccPage} />
 					<Route exact path="/OurHistory" component={HistoryPage} />
-					<Route exact path="/OurMission" component={MissionPage} />
+					<Route exact path="/AboutUs" component={AboutPage} />
 					<Route exact path="/Book" component={BookPage} />
 					<Route exact path="/Contact" component={ContactPage} />
 					<Route exact path="/Join" component={JoinPage} />

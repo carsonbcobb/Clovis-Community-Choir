@@ -7,7 +7,7 @@ export const HeaderContainer = styled.div`
 	@media (max-width: 414px) and (max-height: 896px) {
 		flex-flow: column nowrap;
 		background-color: #2e3d36;
-		position: absolute;
+		position: fixed;
 		transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
 		top: 0;
 		right: 0;
@@ -17,6 +17,9 @@ export const HeaderContainer = styled.div`
 		justify-content: center;
 		transition: transform 0.3s ease-in-out;
 		z-index: 100;
+	}
+	@media (max-width: 320px) and (max-height: 568px) {
+		overflow: hidden;
 	}
 `;
 
@@ -88,6 +91,35 @@ export const MainNav = styled.ul`
 			}
 		}
 	}
+	@media (max-width: 375px) and (max-height: 812px) {
+		li {
+			padding: 10px;
+
+			a {
+				padding: 10px;
+			}
+		}
+	}
+	@media (max-width: 414px) and (max-height: 736px) {
+		li {
+			padding: 5px;
+
+			a {
+				padding: 5px;
+			}
+		}
+	}
+	@media (max-width: 320px) and (max-height: 568px) {
+		transform: translate(35%, -10%);
+
+		li {
+			padding: 2px;
+
+			a {
+				padding: 2px;
+			}
+		}
+	}
 `;
 
 export const SubMenu = styled.ul`
@@ -133,6 +165,48 @@ export const SubMenu = styled.ul`
 
 		a {
 			padding: 5px;
+		}
+	}
+	@media (max-width: 375px) and (max-height: 812px) {
+		transform: translate(-72%, -40%);
+		li {
+			a {
+				font-size: 1.2rem;
+			}
+		}
+	}
+	@media (max-width: 414px) and (max-height: 736px) {
+		transform: translate(-80%, -43%);
+
+		li {
+			a {
+				font-size: 1.2rem;
+			}
+		}
+	}
+	@media (max-width: 375px) and (max-height: 667px) {
+		transform: translate(-95%, -55%);
+		li {
+			padding: 1px;
+			a {
+				font-size: 1.1rem;
+				padding: 15px;
+			}
+		}
+	}
+	@media (max-width: 320px) and (max-height: 568px) {
+		transform: translate(-85%, -55%);
+		li {
+			transform: translateX(-155%);
+
+			padding: 1px;
+			margin: 1px;
+
+			a {
+				font-size: 1rem;
+				padding: 5px;
+				margin: 2px;
+			}
 		}
 	}
 `;
