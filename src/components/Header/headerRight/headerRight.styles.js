@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.div `
 	width: 80vw;
 	height: 100%;
 	z-index: 80;
@@ -23,7 +23,7 @@ export const HeaderContainer = styled.div`
 	}
 `;
 
-export const MainNav = styled.ul`
+export const MainNav = styled.ul `
 	list-style: none;
 	display: flex;
 	justify-content: center;
@@ -95,6 +95,7 @@ export const MainNav = styled.ul`
 		li {
 			padding: 10px;
 
+
 			a {
 				padding: 10px;
 			}
@@ -109,20 +110,62 @@ export const MainNav = styled.ul`
 			}
 		}
 	}
-	@media (max-width: 320px) and (max-height: 568px) {
+	@media (max-width: 320px) and (max-height: 568px) and (-webkit-device-pixel-ratio: 2) {
 		transform: translate(35%, -10%);
+		
+
 
 		li {
 			padding: 2px;
+			
+
+			
 
 			a {
 				padding: 2px;
 			}
 		}
 	}
+	@media only screen and (min-width: 1024px) and (max-height: 768px) and (-webkit-device-pixel-ratio: 2) {
+		transform: translate(10%, 20%);
+		li{
+			padding: 3%;
+		}
+	}
+	
+	@media only screen and (min-width: 1366px) and (max-height: 1024px) and (-webkit-device-pixel-ratio: 2) {
+		transform: translate(10%, 20%);
+		li{
+			padding: 2%;
+			font-size: 3rem;
+		}
+			
+	}
+	
+	@media (min-width: 1920px) and (max-height: 1080px){
+		transform: translate(0%, 10%);
+		li{
+			padding: 2%;
+			font-size: 4rem ;
+		}
+	}
+	@media (min-width: 1366px) and (max-height: 768px){
+		transform: translate(0%, 10%);
+		li{
+			padding: 3%;
+			font-size: 2.5rem ;
+		}
+	}
+	@media (min-width: 800px) and (max-height: 600px){
+		transform: translate(0%, 25%);
+		li{
+			padding: 2%;
+			font-size: 1.5rem ;
+		}
+	}
 `;
 
-export const SubMenu = styled.ul`
+export const SubMenu = styled.ul `
 	display: none;
 	transform: translateX(-40%);
 
@@ -154,17 +197,18 @@ export const SubMenu = styled.ul`
 		}
 	}
 	@media (max-width: 414px) and (max-height: 896px) {
-		transform: translate(-90%, -35%);
+		transform: translate(-130%, -40%);
 
 		li {
 			writing-mode: vertical-rl;
 			margin: 1px;
-			transform: translateX(-100%);
-			padding: 5px;
+			transform: translateX(-150%);
+			padding: 1px;
 		}
 
 		a {
-			padding: 5px;
+			padding: 1px;
+			font-size: 1rem !important;
 		}
 	}
 	@media (max-width: 375px) and (max-height: 812px) {
@@ -175,15 +219,7 @@ export const SubMenu = styled.ul`
 			}
 		}
 	}
-	@media (max-width: 414px) and (max-height: 736px) {
-		transform: translate(-80%, -43%);
-
-		li {
-			a {
-				font-size: 1.2rem;
-			}
-		}
-	}
+	
 	@media (max-width: 375px) and (max-height: 667px) {
 		transform: translate(-95%, -55%);
 		li {
@@ -197,7 +233,7 @@ export const SubMenu = styled.ul`
 	@media (max-width: 320px) and (max-height: 568px) {
 		transform: translate(-85%, -55%);
 		li {
-			transform: translateX(-155%);
+			transform: translateX(-205%);
 
 			padding: 1px;
 			margin: 1px;

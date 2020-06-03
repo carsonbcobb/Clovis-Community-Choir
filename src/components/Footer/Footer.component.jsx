@@ -23,7 +23,7 @@ const Footer = () => (
 				<br />
 				559-327-2800
 				<br />
-				Ed@CCC.com
+				Cloviscommunitychoir@gmail.com
 				<br />
 			</InfoText>
 		</Info>

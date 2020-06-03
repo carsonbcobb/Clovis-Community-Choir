@@ -14,14 +14,14 @@ import {
 const HistoryPage = () => (
 	<AboutContainer>
 		<HeaderImage>
-			<img src={"https://i.imgur.com/YcbdCdG.jpg"} alt="Our History" />
+			<img src={"https://i.imgur.com/YcbdCdG.jpg"} alt="Choir Performing in 2015" />
 		</HeaderImage>
 		<BodyContainer>
 			<Title>
 				<h2>Our History</h2>
 			</Title>
 			<BodyHeader>
-				<h1>Many Years Ago, in 2014, we began to sing...</h1>
+				<h1>“America, I Still Can Hear Your Song” was the first song performed! Learn more about our history...</h1>
 			</BodyHeader>
 			<BodyText>
 				<p>

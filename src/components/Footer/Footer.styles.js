@@ -26,6 +26,10 @@ export const Info = styled.div`
 	@media (max-width: 414px) and (max-height: 896px) {
 		transform: translateX(-45%);
 	}
+	@media (max-width: 320px) and (max-height: 568px) {
+		transform: translateX(-30%);
+
+	}
 `;
 export const CreatedBy = styled.div`
 	color: white;
@@ -37,13 +41,31 @@ export const CreatedBy = styled.div`
 		padding-right: 5px;
 		text-align: center;
 	}
+	@media (max-width: 414px) and (max-height: 736px) {
+		font-size: 0.6rem;
+	}
+	@media (max-width: 320px) and (max-height: 568px) {
+		font-size: 0.6rem;
+	}
+	@media (min-width: 1920px) and (min-height: 1080px) and (-webkit-device-pixel-ratio: 2){
+		font-size: 1.5rem;
+	}
 `;
 
 export const InfoText = styled.p`
 	@media (max-width: 414px) and (max-height: 896px) {
 		font-size: 0.8rem;
 	}
+	@media (max-width: 414px) and (max-height: 736px) {
+		font-size: 0.6rem;
+	}
 	@media (max-width: 320px) and (max-height: 568px) {
-		font-size: 0.7rem;
+		font-size: 0.6rem;
+	}
+	@media (min-width: 800px) and (min-height: 600px){
+		transform: translateX(10%);
+	}
+	@media (min-width: 1920px) and (min-height: 1080px) and (-webkit-device-pixel-ratio: 2){
+		font-size: 1.5rem;
 	}
 `;

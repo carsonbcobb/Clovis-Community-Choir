@@ -19,19 +19,19 @@ const slides = [
 	{
 		title: "Clovis Community Choir",
 		description:
-			"Bringing the beauty of Choral Music to the Fresno area since 2014",
+			"Bringing harmony to our community through great choral music",
 		image: "https://i.imgur.com/GEKNBEZ.jpg?2",
 	},
 	{
 		title: "Come Sing With Us!",
 		description:
-			"We would love for you to join our choir family! Come join us!",
+			"Join over 90 others who’ve discovered the joy of singing together!",
 		image: "https://i.imgur.com/xCzjSX9.jpg",
 	},
 	{
-		title: "A Diverse Musical Sound",
+		title: "Experience the Power Of Music",
 		description:
-			"Come take a trip with us, as we sing songs from across the world, past to present",
+			"Whether attending energizing weekly rehearsals or our inspiring performances",
 		image: "https://i.imgur.com/h123Hgn.jpg",
 	},
 ];

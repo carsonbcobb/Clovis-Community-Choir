@@ -1,12 +1,31 @@
 import styled from "styled-components";
 
-export const HomepageContainer = styled.div`
+export const HomepageContainer = styled.div `
 	width: 100vw;
 	height: 250vh;
 	color: #373737;
+	@media (max-width: 414px) and (max-height: 896px) {
+		height: 225vh !important;
+	}
+	@media (max-width: 414px) and (max-height: 736px) {
+		height: 225vh;
+	}
+	
+	@media (max-width: 320px) and (max-height: 568px) {
+		height: 235vh;
+	}
+	@media (max-width: 375px) and (max-height: 667px) {
+		height: 235vh;
+	}
+	@media (max-width: 414px) and (max-height: 736px) {
+		height: 235vh;
+	}
+	@media (min-width: 1920px) and (min-height: 1080px) and (-webkit-device-pixel-ratio: 2){
+	height: 235vh;
+	}
 `;
 
-export const SliderContainer = styled.div`
+export const SliderContainer = styled.div `
 	.slider {
 		width: 100vw;
 		height: 90vh;
@@ -30,7 +49,7 @@ export const SliderContainer = styled.div`
 				top: 50%;
 				left: 50%;
 				-webkit-transform: translate(-50%, -50%);
-				transform: translate(-50%, -50%);
+				transform: translate(-50%, -75%);
 				h1 {
 					font-weight: 900;
 					margin: 0 auto;
@@ -39,12 +58,6 @@ export const SliderContainer = styled.div`
 					font-size: 64px;
 					line-height: 1;
 					font-family: "Playfair Display", serif;
-					@media (max-width: 414px) and (max-height: 896px) {
-						font-size: 4rem;
-					}
-					@media (max-width: 320px) and (max-height: 568px) {
-						font-size: 3rem;
-					}
 				}
 				p {
 					color: #faf7ed;
@@ -52,11 +65,81 @@ export const SliderContainer = styled.div`
 					line-height: 1.5;
 					margin: 20px auto 30px;
 					max-width: 640px;
-					@media (max-width: 414px) and (max-height: 896px) {
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+		.slider {
+			height: 65vh;
+			.slider-content {
+				.inner {
+					h1 {
+						font-size: 4rem;
+					}
+					p {
 						font-weight: 600;
 					}
-					@media (max-width: 320px) and (max-height: 568px) {
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: 414px) and (max-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+		.slider {
+			height: 65vh;
+			.slider-content {
+				.inner {
+					h1 {
+						font-size: 3rem;
+					}
+					p {
+						font-weight: 600;
 						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: 320px) and (max-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+		.slider {
+			height: 75vh;
+			.slider-content {
+				.inner {
+					h1 {
+						font-size: 2rem !important;
+					}
+					p {
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+		.slider {
+			height: 75vh;
+			.slider-content {
+				.inner {
+					h1 {
+						font-size: 3rem;
+					}
+					p {
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+	@media (min-width: 1920px) and (min-height: 1080px) and (-webkit-device-pixel-ratio: 2){
+		.slider {
+			height: 75vh;
+			.slider-content {
+				.inner {
+					h1 {
+						font-size: 6rem;
+					}
+					p {
+						font-size: 2.5rem;
 					}
 				}
 			}
@@ -64,7 +147,7 @@ export const SliderContainer = styled.div`
 	}
 `;
 
-export const About = styled.div`
+export const About = styled.div `
 	height: 60vh;
 	background: #f1cfb6;
 	display: flex;
@@ -131,9 +214,21 @@ export const About = styled.div`
 			}
 		}
 	}
+	@media (min-width: 1920px) and (min-height: 1080px) and (-webkit-device-pixel-ratio: 2){
+		.text-container {
+			p {
+				font-size: 2.5rem;
+			}
+		}
+		.button-container {
+			.about-button {
+				font-size: 2.5rem;
+			}
+		}
+	}
 `;
 
-export const Sponsors = styled.div`
+export const Sponsors = styled.div `
 	height: 50vh;
 	background: #bdccd0;
 	display: flex;
@@ -169,9 +264,16 @@ export const Sponsors = styled.div`
 			}
 		}
 	}
+	@media (min-width: 1920px) and (min-height: 1080px) and (-webkit-device-pixel-ratio: 2){
+		.text-container {
+			p {
+				font-size: 2.5rem;
+			}
+		}
+	}
 `;
 
-export const Info = styled.div`
+export const Info = styled.div `
 	height: 40vh;
 	background: #faf7ed;
 	display: flex;
@@ -231,12 +333,10 @@ export const Info = styled.div`
 			}
 		}
 
-		.facebook-button-container {
-			transform: translateY(0%);
-		}
+		
 		.facebook-container {
 			height: auto;
-			width: 35%;
+			width: 55%;
 			transform: translateY(15%);
 
 			img {
@@ -264,19 +364,129 @@ export const Info = styled.div`
 		}
 		.facebook-container {
 			img {
-				width: 90%;
+				width: 60%;
 			}
 		}
 	}
 	@media (max-width: 375px) and (max-height: 667px) {
 		.facebook-container {
 			img {
-				width: 80%;
+				width: 60%;
 			}
 		}
 		.text-container {
 			p {
 				font-size: 1rem;
+			}
+		}
+	}
+	@media (max-width: 320px) and (max-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+		.info-header {
+			transform: translateY(-50%);
+		}
+
+		.facebook-container {
+			img {
+				width: 50%;
+				-webkit-max-logical-width: 50%;
+			}
+		}
+
+		.facebook-button-container {
+			transform: translateY(-40%);
+		}
+	}
+	@media only screen and (min-width: 1024px) and (max-height: 768px) and (-webkit-device-pixel-ratio: 2) {
+		.facebook-container {
+			img {
+				width: 65%;
+				-webkit-max-logical-width: 65%;
+			}
+		}
+	}
+	@media only screen and (min-width: 1366px) and (max-height: 1024px) and (-webkit-device-pixel-ratio: 2) {
+		.facebook-container {
+			img {
+				width: 65%;
+				-webkit-max-logical-width: 65%;
+			}
+		}
+		.info-header {
+			h2 {
+				font-size: 3rem;
+			}
+		}
+		.text-container {
+			p {
+				font-size: 2rem;
+			}
+		}
+		.facebook-button-container {
+			transform: translateY(-20%);
+			.facebook-button{
+				padding: 25px;
+				font-size: 2rem;
+				
+			}
+		}
+		
+	}
+	@media only screen and (min-width: 1366px) and (max-height: 768px) {
+		.facebook-container {
+			img {
+				width: 35%;
+				-webkit-max-logical-width: 35%;
+			}
+		}
+		.info-header {
+			transform: translateY(-20%);
+		
+	}
+		.text-container {
+			transform: translateY(-40%);
+			
+			
+		}
+		.facebook-button-container {
+			transform: translateY(-20%);
+			.facebook-button{
+				padding: 15px;
+				font-size: 1.5rem;
+				
+			}
+		}
+		
+	}
+	@media (min-width: 1920px) and (min-height: 1080px) and (-webkit-device-pixel-ratio: 2){
+
+		.facebook-container {
+			width: 100%;
+			transform: translateY(10%);
+
+			img {
+				width: 10%;
+				-webkit-max-logical-width: 10%;
+			}
+		}
+		.info-header {
+			transform: translateY(-20%);
+		h2 {
+			font-size: 4.5rem;
+		}
+	}
+		.text-container {
+			transform: translateY(-40%);
+			
+			p {
+				font-size: 2.5rem;
+			}
+		}
+		.facebook-button-container {
+			transform: translateY(-20%);
+			.facebook-button{
+				padding: 25px;
+				font-size: 2.5rem;
+				
 			}
 		}
 	}

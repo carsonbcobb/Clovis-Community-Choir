@@ -16,7 +16,7 @@ import {
 const ContactPage = () => (
 	<ContactContainer>
 		<HeaderImage>
-			<img src={"https://i.imgur.com/vZqQBG5.jpg"} alt="Contact Header" />
+			<img src={"https://i.imgur.com/vZqQBG5.jpg"} alt="Choir Performing" />
 		</HeaderImage>
 		<BodyContainer>
 			<Title>
@@ -32,7 +32,7 @@ const ContactPage = () => (
 				</p>
 			</BodyText>
 			<ButtonContainer>
-				<Button className="contact-button" href="mailto:someone@yoursite.com">
+				<Button className="contact-button" href="mailto:Cloviscommunitychoir@gmail.com">
 					Email Us!
 				</Button>
 			</ButtonContainer>

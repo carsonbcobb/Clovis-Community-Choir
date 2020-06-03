@@ -18,7 +18,7 @@ export const PastContainer = styled.div`
 		height: 575vh;
 	}
 	@media (max-width: 320px) and (max-height: 568px) {
-		height: 675vh;
+		height: 740vh;
 	}
 `;
 export const HeaderContainer = styled.div`
@@ -57,7 +57,7 @@ export const BodyContainer = styled.div`
 		height: 535vh;
 	}
 	@media (max-width: 320px) and (max-height: 568px) {
-		height: 635vh;
+		height: 700vh;
 	}
 `;
 export const ItemBlock = styled.div`

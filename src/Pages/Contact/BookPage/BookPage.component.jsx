@@ -16,7 +16,7 @@ import {
 const BookPage = () => (
 	<ContactContainer>
 		<HeaderImage>
-			<img src={"https://i.imgur.com/zchbgqy.jpg?1"} alt="Contact Header" />
+			<img src={"https://i.imgur.com/zchbgqy.jpg?1"} alt="Choir Performance at Grizzly Stadium" />
 		</HeaderImage>
 		<BodyContainer>
 			<Title>
@@ -34,7 +34,7 @@ const BookPage = () => (
 				</p>
 			</BodyText>
 			<ButtonContainer>
-				<Button className="contact-button">Email Us!</Button>
+				<Button className="contact-button" href="mailto:Cloviscommunitychoir@gmail.com">Email Us!</Button>
 			</ButtonContainer>
 		</BodyContainer>
 		<Footer style={{ height: "10vh" }} />

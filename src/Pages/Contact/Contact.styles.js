@@ -38,24 +38,43 @@ export const Title = styled.div`
 export const BodyHeader = styled.div`
 	padding: 2%;
 	font-family: "Playfair Display", serif;
+	text-align: center;
 	h1 {
 		font-size: 2.8rem;
 		@media (max-width: 414px) and (max-height: 896px) {
 			font-size: 2rem;
 			text-align: center;
 		}
+		@media (min-width: 1920px) and (min-height: 1080px) {
+			font-size: 3.5rem;
+		}
+		@media (min-width: 1366px) and (max-height: 1024px){
+			font-size: 3.5rem;
+
+		}
 	}
 `;
 export const BodyText = styled.div`
 	padding: 3%;
+	text-align: center;
+
+	
 	p {
 		font-size: 2rem;
 		@media (max-width: 414px) and (max-height: 896px) {
 			font-size: 1.7rem;
-			text-align: center;
 		}
 		@media (max-width: 414px) and (max-height: 896px) {
 			font-size: 1.4rem;
+		}
+		@media (max-width: 320px) and (max-height: 568px) {
+			font-size: 1rem;
+		}
+		@media (min-width: 1366px) and (min-height: 1024px) {
+			font-size: 3rem;
+		}
+		@media (min-width: 1920px) and (min-height: 1080px) {
+			font-size: 3.5rem;
 		}
 	}
 `;
@@ -75,4 +94,14 @@ export const ButtonContainer = styled.div`
 	@media (max-width: 414px) and (max-height: 896px) {
 		padding: 15px;
 	}
+	@media (min-width: 1920px) and (min-height: 1080px) {
+			.contact-button{
+				font-size: 2.5rem;
+			}
+		}
+		@media (min-width: 1366px) and (max-height: 1024px) {
+			.contact-button{
+				font-size: 2.5rem;
+			}
+		}
 `;

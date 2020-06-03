@@ -14,7 +14,7 @@ import {
 const AboutPage = () => (
 	<AboutContainer>
 		<HeaderImage>
-			<img src={"https://i.imgur.com/U1rNSCs.jpg?2"} alt="Our Mission" />
+			<img src={"https://i.imgur.com/U1rNSCs.jpg?2"} alt="Choir Performing in Concert" />
 		</HeaderImage>
 		<BodyContainer>
 			<Title>

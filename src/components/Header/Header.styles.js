@@ -21,6 +21,7 @@ export const LogoContainer = styled.a`
 		justify-content: flex-start;
 		padding-left: 5%;
 	}
+	
 `;
 
 export const Logo = styled.img`
@@ -29,4 +30,11 @@ export const Logo = styled.img`
 	@media (max-width: 850px) {
 		width: 50%;
 	}
+	@media (max-width: 800px) and (max-height: 600px){
+		width: 80%;
+	}
+	@media only screen and (max-width: 320px) and (max-height: 568px) and (-webkit-device-pixel-ratio: 2){
+		width: 50%;
+	}
+	
 `;

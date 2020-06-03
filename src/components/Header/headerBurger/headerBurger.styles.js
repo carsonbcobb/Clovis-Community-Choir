@@ -13,9 +13,17 @@ const BurgerContainer = styled.div`
 		justify-content: space-around;
 		flex-flow: column nowrap;
 	}
-	@media (max-width: 320px) and (max-height: 568px) {
-		top: 2.75em;
-		right: 1.75em;
+	@media (max-width: 414px) and (max-height: 736px) {
+		top: 3.5em;
+		right: 2.5em;
+	}
+	@media (max-width: 375px) and (max-height: 667px) {
+		top: 3em;
+		right: 2.5em;
+	}
+	@media (max-width: 320px) and (max-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+		top: 2.5em;
+		right: 2.5em;
 	}
 
 	div {
