@@ -23,6 +23,10 @@ export const Logo = styled.img`
 export const Info = styled.div`
 	transform: translateX(-35%);
 	color: white;
+	a{
+		text-decoration: none;
+		color: #faf7ed;
+	}
 	@media (max-width: 414px) and (max-height: 896px) {
 		transform: translateX(-45%);
 	}

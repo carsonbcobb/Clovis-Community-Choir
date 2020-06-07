@@ -23,7 +23,7 @@ const Footer = () => (
 				<br />
 				559-327-2800
 				<br />
-				Cloviscommunitychoir@gmail.com
+				<a href="mailto:Cloviscommunitychoir@gmail.com">Cloviscommunitychoir@gmail.com</a>
 				<br />
 			</InfoText>
 		</Info>

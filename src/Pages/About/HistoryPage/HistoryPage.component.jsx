@@ -41,7 +41,7 @@ const HistoryPage = () => (
 				</p>
 				<p>
 					Since then, the Choir has grown, numerically-- with over 90 voices and
-					musically. The the desire has always been to present a varied program
+					musically. The desire has always been to present a varied program
 					of music for our audiences. Our concerts range from the annual
 					Patriotic Concert, to seasonal concerts, and pop-like concerts
 					featuring great Broadway and Movie tunes. One of the favorite

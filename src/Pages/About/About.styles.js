@@ -104,7 +104,7 @@ export const BodyText = styled.div `
 			font-size: 2rem;
 		}
 	}
-	@media (max-width: 800px) and (max-height: 600px) {
+	@media (min-width: 800px) and (min-height: 600px) {
 		p {
 			font-size: 1rem;
 		}

@@ -21,7 +21,7 @@ const AboutPage = () => (
 				<h2>About Us</h2>
 			</Title>
 			<BodyHeader>
-				<h1>Building community one song at a time.</h1>
+				<h1>A love of singing balanced with a love of community</h1>
 			</BodyHeader>
 			<BodyText>
 				<p>
